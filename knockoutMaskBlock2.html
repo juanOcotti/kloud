@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>knockout svg mask2</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i" rel="stylesheet">
+	<link rel="stylesheet" href="knockOutMask2.css">
+</head>
+<body>
+<div class="container">	
+<div class="background"></div>
+	<h1 class="title absolute-center">  
+  <span class="knockout">
+    <!-- Change text here -->
+    <span class="knockout__text">CLOUD ATLAS</span>
+
+    <svg class="knockout__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+      <mask id="text-clip">
+        <rect id="bg" width="100%" height="100%" fill="white"/>
+        <!-- And here -->
+        <text x="0.5em" y="1.45em" width="100%" height="100%" fill="#000">CLOUD ATLAS</text>
+      </mask>
+
+      <rect width="100%" height="100%" mask="url(#text-clip)"/>
+    </svg>
+    </span>
+  </h1>
+</div><!-- end container -->
+
+<!-- <section class="clouds">
+<div><p>Cirrus Mares Tails</p></div>
+</section> -->
+
+</body>
+</html>
