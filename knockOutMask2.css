@@ -1,0 +1,148 @@
+/* cloud atlas */
+
+body {
+  overflow: hidden;
+  margin: 0; 
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  width: 100vw;
+  max-width: 735px; }  
+  
+div.container { 
+    width: 100vw;
+    height: 60vh;
+    /* max-width: 754px;  */  
+    margin: 0 auto; 
+    position: relative; }
+
+/* cloud Img */
+.background  {
+  background-image: url(cloudAtlasBurn.png);
+  background-attachment: fixed;
+  background-size: cover;   
+  position: fixed; 
+  top: 0;
+  left: 0; 
+  background-repeat: no-repeat; }
+
+.background {
+  width: 100%;   /* 120 */
+  height: 410px;     /* 110 */  
+  -webkit-animation: Slide 30s ease-in-out 500ms infinite alternate both;
+          animation: Slide 30s ease-in-out 500ms infinite alternate both; }
+
+@-webkit-keyframes Slide {
+  from {
+    -webkit-transform: translate(-5%, -5%) scale(1.1);
+            transform: translate(-5%, -5%) scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: translate(5%, -5%) scale(1.1);
+            transform: translate(5%, -5%) scale(1.1);
+  }
+}
+
+@keyframes Slide {
+  from {
+            transform: translate(-5%, -5%) scale(1.1);
+  }
+  50% {
+            transform: scale(1);
+  }
+  to {
+            transform: translate(5%, -5%) scale(1.1);
+  }
+}
+  /* h1 w/ 2 classes */
+.title {
+  font-family: 'Lato', sans-serif;
+  font-size: 55px;
+  font-weight: 400; 
+  line-height: 1;
+  width: 100%; /* this moved the margin left if < 100 */
+  height: 0.2em;
+  text-align: center;
+  overflow: visible; }
+/* h1 */
+.absolute-center {
+  position: absolute;
+  top: 0; /* was 75px */
+  right: 0; 
+  left: 0; 
+  margin: auto; }
+
+.title {
+-webkit-animation: animation 1000ms linear 500ms both;
+        animation: animation 1000ms linear 500ms both; }
+
+@-webkit-keyframes animation {
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+}
+@keyframes animation {
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+  }  
+}
+
+
+/* span -content of h1 text and  svg knockout mask */
+.knockout {
+  display: inline-block;
+  overflow: hidden;
+  text-align: left;
+  position: relative;
+  color: transparent; /* text is transparent */
+  padding: 0.5em;
+  white-space: nowrap; }
+
+/* svg content */
+.knockout__svg {
+  fill: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;  }
+
+/* MEDIA Q */
+@media screen and (min-width: 320px) and (max-width:374px) {
+  .knockout {
+    font-size: 42px;
+  }
+} 
+
+@media screen and (min-width: 375px) and (max-width:414px) {
+  .knockout {
+    font-size: 46px;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 420px) {
+  .knockout {
+    font-size: 48px;
+  }
+} 
+
+/* section */
+.clouds {
+  height: 60vh; }
